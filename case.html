@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Udoka Ilodigwe | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./image/favicon.png">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link href="https://cdn.jsdelivr.net/gh/vaibhav111tandon/vov.css@latest/vov.min.css" rel="stylesheet"
+        type="text/css">
+    <link rel="stylesheet" type="text/css" href="/style.production.css">
+</head>
+
+<body>
+    <header>
+        <nav class="vov fade-in-down" id="top">
+            <img src="/image/logo.png" class="banner_logo" />
+            <div class=" about_buttons-home vov fade-in-up">
+                <a href="project.html" class="nav_link">PROJECTS</a>
+                <a href="resume.html" class="nav_link active">CASE STUDY</a>
+            </div>
+        </nav>
+    </header>
+    <h1 class="case_h1">Case Study<br> udo_flix-API full-stack project</h1>
+    <div class="case case_headings">
+        <h3>Project Overview</h3>
+        <p>
+            udo_flix-API is a server-side application built with the combination of Node and Express for it's RESTull
+            architectural state and NoSQL(MongoDB) to store data about
+            movies, directors and genres.
+        </p>
+        <h3>Purpose & Context</h3>
+        <p>
+            As a Software Developer, i struggled with the problem of developing from scratch a server-side application
+            that i can connect with my client-side.
+            I personally wanted to create an asynchronous, event-driven and highly scalable backend application
+            that will serve client requests super fast.
+        </p>
+        <h3>Objectives</h3>
+        <p>
+            Implementing necessary tech-stacks to build out a full-stack project i can showcase on my portfolio. And
+            assimilating the necessary knowledge from applying such tech-stack.
+        </p>
+    </div>
+    <div class=" case case_headings1">
+        <h3>Processes</h3>
+        <h4>Server-Side</h4>
+        <p>
+            To build a super fast, high scale and asynchronous app, it's quite typical i choose Node as against PHP or
+            ASP for the Run Time Enviroment(RTE) during build. This was of course complimented with Terminal, IDE(VS
+            code), modules(core, local and third party).
+        </p>
+        <p>
+            In other to work with suitable framwork that compliment the nature of Node, i choose Express as against
+            Django or Laravel, because it simplified Node syntax, and made it easier to write server-side code. Express
+            provided
+            me with minimalistic functionality by avoiding excess weight that will slow down server processing.
+            For routing purpose, i used Express to manage HTTP requests that interacted with requests from client-side.
+        </p>
+    </div>
+    <div class="case case_headings2">
+        <div>
+            <img class="img_postman" style="width: 500px;" src="./image/postmantest.JPG" alt="Postman image" />
+            <p class="img_fig">Fig. 1. Image showing Postman test for getSingleMovie</p>
+        </div>
+        <div>
+            <p>
+                The HTTP(GET, POST, or PUT)
+                requests to endpoints of the API was managed through Express.
+                And middlewares such as morgan, body-parser etc. were adopted to log requests and read the body of HTTP
+                requests within handlers.
+                CRUD operations were used to
+                manipulate
+                data through the server to the database. And information from database were returned in JSON format.
+            </p>
+            <p> API endpoints were tested with Postman. I used Postman because it is a simple UI for testing API
+                lifecycle.
+                I also included user authentication and authorization code in the
+                form of basic HTTP authentication and JWT authentication.
+            </p>
+            <a href="https://udo-flix.herokuapp.com/documentation.html" alt="api documentation" target="_blank"
+                class="doc_endpoint">View
+                Documentation and Endpoints</a>
+        </div>
+    </div>
+    <div class=" case case_headings3">
+        <div>
+            <p>
+                For learning purposes i tried out Relational Database structure using PostgreSQL, i also created the
+                database
+                schema and the CRUD operations in SQL. <br>
+                For comparison sake i further applied a Non-Relational
+                Database(NoSQL) MongoDB, utilized it through Mongo Shell and further wrote CRUD operations in MongoDB.
+                <br>
+                For the Business Logic Layer, i used Mongoose as against Sequelize. This is because Mongoose is an
+                Object
+                Document Mapper(ODM) that fits and translates MongoDB document logic to the server.
+            </p>
+            <img class="img_cmd" src="./image/cmd.jpeg" alt="Command prompt image" style="width: 550px;" />
+            <p class="img_fig">Fig. 3. Image of Mongo queries on CLI</p>
+        </div>
+        <div>
+            <img class="img_mongodb" src="./image/mongodb.JPG" alt="MongoDB image" style="width: 600px;" />
+            <p class="img_fig">
+                Fig. 2. Image of Mongo database collections
+            </p>
+        </div>
+    </div>
+    <div class="case">
+        <h4>Client-Side</h4>
+    </div>
+    <div class=" case case_headings5">
+        <p>
+            After completing the server-side, i proceeded with the development of a client-side so that users can
+            practically request for and receive responses from the server-side. I built a single-page, responsive
+            application with React.<br>
+            <br>
+            It provides several interface views, including but not limited to, a main
+            view(showing lists of all movies), single movie view(show data about a single movie and allow users to
+            add
+            movies to their favorite list, a login view, registration view, and a profile view (where user can
+            register
+            and login into their account, and and also update their account.
+        </p>
+        <div>
+            <img class="img_udoflix2" style="width: 500px;" src="./image/udoflixclient2.png"
+                alt="udo_flix-client image" />
+            <p class="img_fig">Fig. 4. Image of client-side mainView built with React. </p>
+        </div>
+
+    </div>
+    <div class="case case_heading6">
+        <div>
+            <h3 class="case_h1">Challenges and Outcomes</h3>
+            <p>
+                Building udo_flix-API is the most challenging and also my favorite project. I faced Several difficulties
+                while building this API server, such as discovering the best Business Logic Layer to implement and the
+                best
+                way to route the different endpoints of the server. <br>
+                While i was using Node modules, i never knew i could adopt Express for routing the endpoints of the API,
+                thus, making
+                my
+                code base clean and less redundant. Going through the <a class="doc_endpoint"
+                    href="https://expressjs.com/en/4x/api.html">Express
+                    Documentation</a>, i discovered how to use Express for routing the endpoints as against the use of
+                URL
+                and HTTP Node module combination, which requires much code writing.<br>
+                To also make a decision on which database structure to use, i decided to try both the SQL and NoSQL
+                architecture. At the end, i went for the NoSQL because my data appears to be unstructured and also
+                implemented a document-store storage method and which would automatically be processed faster using
+                MongoDB.
+                Ofcourse, there were times when it seemed difficult to proceed and most installations were not
+                working(especially Node installation and setting up the RTE for development), i had series of
+                pair-programming sessions with my able mentor and tutor during i got all the necessary help i needed.
+            </p>
+        </div>
+        <div>
+            <h3>Duration</h3>
+            <p>
+                The development of these projects took me 4-6weeks, this was because, lots of processes were going over
+                my head at first, and i needed time to
+                solidify the knowledge before moving ahead. Further refactoring went on afterwards.
+            </p>
+        </div>
+        <div>
+            <h3>Credits</h3>
+            <p>
+                Lead Developer: Udoka Ilodigwe <br>
+                Mentor: Mohamed Riaad <br />
+                Tutor: Frank
+            </p>
+        </div>
+    </div>
+    <div class="api_project">
+        <a class="case" href="project.html#api_case">Back to udo_flix API project</a>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Udoka Ilodigwe | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./image/favicon.png">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link href="https://cdn.jsdelivr.net/gh/vaibhav111tandon/vov.css@latest/vov.min.css" rel="stylesheet"
+        type="text/css">
+    <link rel="stylesheet" type="text/css" href="/style.production.css">
+</head>
+
+<body>
+    <header>
+        <nav class="vov fade-in-down">
+            <img src="/image/logo.png" class="banner_logo" />
+            <div class=" about_buttons-home vov fade-in-up">
+                <a href="index.html" class="nav_link">HOME</a>
+                <a href="project.html" class="nav_link">PROJECTS</a>
+                <a href="about.html" class="nav_link">ABOUT</a>
+                <a href="contact.html" class="nav_link active">CONTACT</a>
+            </div>
+        </nav>
+        <p class="contact_intro">
+            I always seek to connect and collaborate with fellow creative people, if you find me fit and
+            interesting with my skills<br> please reach out to me via phone, LinkedIn or through the form channel below
+            and let's talk &#128522.
+        </p>
+        <main class="main_contact">
+            <section class="contact_section0">
+                <h1 class="contact_details">
+                    CONTACT <text class="contact_details1">ME</text> </h1>
+                <div>
+                    <p class="contact_info contact_name">Udoka Ilodigwe</p>
+                    <p class="contact_info">Helsinki, Finland</p>
+                    <p class=" contact_info">+358465931850</p>
+                    <p class="contact_info"><i class="fas fa-envelope"></i>ilodigweudoka@gmail.com</p>
+                    <br>
+                </div>
+                <div class="contact_logos">
+                    <!--Github Logo-->
+                    <a href="https://github.com/Udokailodigwe" target="_blank"><img src="image/github.png"
+                            alt="Small Github Logo" /></a>
+                    <!--LinkedIn Logo-->
+                    <a href="https://www.linkedin.com/in/udoka-ilodigwe-073872105/" target="_blank"><img
+                            src="image/linkedin.svg" alt="Small LinkedIn Logo" /></a>
+                </div>
+                <br>
+                <a href="/image/udoka.ilodigwe-resume.pdf" target="_blank" class="contact_resume">Download Resume</a>
+            </section>
+            <section class="contact_section1">
+                <p class="form_heading">Usually replies within 24hrs Helsinki time.</p>
+                <div class="contact_container">
+                    <form action="https://formspree.io/f/mbjwqqkg" method="POST" id="my-form">
+                        <div class="form_group">
+                            <label for="firstname">First Name</label>
+                            <input type="text" id="firstname" name="firstname" required>
+                        </div>
+                        <div class="form_group">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" id="lastname" name="lastname" required>
+                        </div>
+                        <div class="form_group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form_group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject">
+                        </div>
+                        <div class="form_group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" cols="10" rows="5"></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+                <div id="my-form-status"></div>
+            </section>
+        </main>
+
+        <script src="index.js"></script>
+
+</body>
+
+</html>
